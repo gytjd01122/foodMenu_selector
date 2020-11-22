@@ -7,9 +7,11 @@ import random
 # 만든 날짜 : 2020-11-22
 # 최종수정일 : 2020-11-22
 
-### 코드 내용에 대한 설명
-# 만든 기능 : 음식 메뉴 추가,삭제, 고르기
-# 디버그 모드 :  0 = OFF, 1 = ON
+"""
+    ### 코드 내용에 대한 설명
+    # 만든 기능 : 음식 메뉴 추가,삭제, 고르기
+    # 디버그 모드 :  0 = OFF, 1 = ON
+"""
 
 DEBUG_MODE = 0
 
@@ -22,7 +24,7 @@ while True:
     print("메뉴를 선택하세요. : " )
     selected_menuNumber =  input("추가 1, 삭제 2, 고르기 3 : ")
     
-    if DEBUG_MODE == 1:
+    if DEBUG_MODE == 1: # 디버깅용
         print(type(selected_menuNumber))
 
     if selected_menuNumber == "1": #음식메뉴 추가하기 
